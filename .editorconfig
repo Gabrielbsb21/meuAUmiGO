@@ -1,0 +1,29 @@
+# Definição do EditorConfig
+root = true
+# Padrões para todos os arquivos
+[*]
+indent_style = space   # Usa espaços ao invés de tabulação
+indent_size = 2        # Tamanho da indentação (padrão do React Native)
+end_of_line = lf       # Usa "LF" como quebra de linha (Unix)
+charset = utf-8        # Codificação UTF-8
+trim_trailing_whitespace = true  # Remove espaços no final das linhas
+insert_final_newline = true  # Garante uma linha vazia no final do arquivo
+# Configurações para arquivos JSON
+[*.json]
+indent_style = space
+indent_size = 2
+# Configurações para arquivos YAML
+[*.yml, *.yaml]
+indent_style = space
+indent_size = 2
+# Configurações para arquivos Markdown
+[*.md]
+trim_trailing_whitespace = false  # Mantém espaços no Markdown para quebra de linha
+# Configurações para arquivos TypeScript e JavaScript
+[*.ts, *.tsx, *.js, *.jsx]
+indent_style = space
+indent_size = 2
+# Configuração para arquivos de configuração como .eslintrc, .prettierrc
+[*.eslintrc, *.prettierrc]
+indent_style = space
+indent_size = 2
